@@ -23,6 +23,13 @@ img, svg {
   src: url(../assets/點陣字體.ttf);
 }
 
+.ver{
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
 
 .container {
   position: relative;
