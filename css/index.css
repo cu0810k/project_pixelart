@@ -16,14 +16,6 @@ h1{
   text-align: center;
 }
 
-h1 span{
-  font-size: 2.2rem;
-  padding: 0 8px 0px 0;
-  position: relative;
-  top: -1px;
-  font-weight: bold;
-}
-
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -489,15 +481,6 @@ input, select {
   margin-bottom: 20px;
   display: flex;
   position: relative;
-}
-
-.btn_out span{
-  /* background-color: #3AB54A; */
-  padding-right: 5px;
-  font-size: 1.6rem;
-  font-weight: bold;
-  position: relative;
-  top: -1px;
 }
 
 .input-group label {

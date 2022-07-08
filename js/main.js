@@ -315,7 +315,7 @@ window.addEventListener('keydown', e => {
       optionTop.dataset.status = 'comp'
       optionDown.dataset.status = 'comp'
 
-      optionTopText.innerHTML = '<span style="font-size: 3.1rem;margin-right: 10px;position: relative;font-weight: bold;top: -2px;">查</span>詢預約';
+      optionTopText.innerHTML = '査詢預約';
       optionDownText.innerText = '取消預約';
 
     } else if (hasBookSeat.includes(tableNum)) {
@@ -603,13 +603,13 @@ bookingSubmit.addEventListener('click', e => {
       });
 
       dialogBox.className = 'dialogBox show cannotBook'
-      dialogTxt.textContent = `你已預約座位 ${queryData.tableNum}`
+      dialogTxt.textContent = `${queryData.inputName}已預約座位 ${queryData.tableNum}，因此不可再預約`
 
       // 跳出查無預約時 先讓查詢表格消失
       // 等查無預約消失後 再讓查詢表格出現
       setTimeout(() => {
         dialogBox.className = 'dialogBox'
-      }, 1000)
+      }, 1500)
     } else {
       addBook()
     }
@@ -841,7 +841,7 @@ querySubmit.addEventListener('click', e => {
       queryForm.className = 'query'
       // 跳出查詢結果
       dialogBox.className = 'dialogBox show querySuccess'
-      dialogTxt.innerHTML = `Hi!${queryData.inputName}<br>你所預約的座位為 ${queryData.tableNum}!`
+      dialogTxt.innerHTML = `${queryData.inputName}預約的座位為 ${queryData.tableNum}!`
 
       optionTop.dataset.status = 'querySuccess'
       optionDown.dataset.status = 'querySuccess'
@@ -850,8 +850,8 @@ querySubmit.addEventListener('click', e => {
       optionTop.className = 'focus'
       optionDown.className = ''
 
-      optionTopText.innerHTML = '回到<span style="font-size:44px;margin-right: 10px;">查</span>詢';
-      optionDownText.innerText = '離開對話';
+      optionTopText.innerHTML = '回到査詢';
+      optionDownText.innerText = '離開対話';
 
 
     } else {
@@ -860,7 +860,7 @@ querySubmit.addEventListener('click', e => {
       queryForm.className = 'query'
 
       dialogBox.className = 'dialogBox show cannotBook' //CSS一樣 所以直接用 cannotBook
-      dialogTxt.textContent = `查無預約QQ`
+      dialogTxt.textContent = `査無預約QQ`
 
       // 跳出查詢結果時 先讓查詢表單暫時關閉
       // 等查詢結果自動消失後，再讓查詢表單出現
@@ -962,7 +962,7 @@ cancelSubmit.addEventListener('click', e => {
       // 刪除資料
       cancelBook(queryData.tableNum)
     } else {
-      dialogTxt.textContent = `查無此預約QQ`
+      dialogTxt.textContent = `査無此預約QQ`
 
       cancelForm.className = 'cancel'
       dialogBox.className = 'dialogBox show cannotBook' // CSS
