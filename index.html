@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>自修室座位預約</title>
   <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -67,9 +67,9 @@
   </div>
 
   <!-- 查詢表單 -->
-  <div class="query">
+  <div class="query show">
     <form id="queryForm">
-      請輸入以下資訊
+      <h1><span>查</span>詢預約</h1>
       <div class="input-group name">
         <label for="inputQueryName">姓名:<span class="notice">必填!</span></label>
         <input  autocomplete="off" type="text" id="inputQueryName">
@@ -86,8 +86,8 @@
         <input  autocomplete="off" type="tel" id="inputQueryTel">
       </div>
       <div class="input-group btn">
-        <button type="button" class="btn_out btn_booking">退出查詢</button>
-        <button type="button" class="btn_submit btn_booking">查詢送出</button>
+        <button type="button" class="btn_out btn_booking">退出<span>查</span>詢</button>
+        <button type="button" class="btn_submit btn_booking">送出資訊</button>
       </div>
     </form>
   </div>
@@ -95,7 +95,7 @@
   <!-- 取消表單 -->
   <div class="cancel">
     <form id="cancelForm">
-      請輸入以下資訊(取消)
+      <h1>取消預約</h1>
       <div class="input-group name">
         <label for="inputCancelName">姓名:<span class="notice">必填!</span></label>
         <input  autocomplete="off" type="text" id="inputCancelName">
@@ -113,7 +113,7 @@
       </div>
       <div class="input-group btn">
         <button type="button" class="btn_out btn_booking">退出取消</button>
-        <button type="button" class="btn_submit btn_booking">確定取消</button>
+        <button type="button" class="btn_submit btn_booking">送出資訊</button>
       </div>
     </form>
   </div>

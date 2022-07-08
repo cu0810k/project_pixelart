@@ -310,12 +310,12 @@ window.addEventListener('keydown', e => {
     if (useCom) {
 
       dialogBox.className = 'dialogBox show comp'
-      dialogTxt.textContent = `打開了電ㄋㄠ v !`
+      dialogTxt.textContent = `打開了電脳!`
 
       optionTop.dataset.status = 'comp'
       optionDown.dataset.status = 'comp'
 
-      optionTopText.innerHTML = '<span style="font-size:44px;margin-right: 10px;">查</span>詢預約';
+      optionTopText.innerHTML = '<span style="font-size: 3.1rem;margin-right: 10px;position: relative;font-weight: bold;top: -2px;">查</span>詢預約';
       optionDownText.innerText = '取消預約';
 
     } else if (hasBookSeat.includes(tableNum)) {
