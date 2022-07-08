@@ -178,8 +178,8 @@ const optionTopText = document.querySelector('.optionTopText')
 const optionDownText = document.querySelector('.optionDownText')
 let tableNum = ''
 
-let x = 4;
-let y = 25;
+let x = 15;
+let y = 16;
 
 function createPerson (x, y, walk) {
 
